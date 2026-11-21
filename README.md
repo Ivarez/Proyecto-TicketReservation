@@ -1,4 +1,4 @@
-# SRB — Sistema de Reserva de Boletos (Entrega 2: Escalable y Tolerante a Fallos)
+# SRB — Sistema de Reserva de Boletos
 
 Sistema distribuido basado en servicios sobre **ZeroMQ (PyZMQ)** y **SQLite (WAL)** en arquitectura de tres capas, con operaciones síncronas (**Consulta, Reserva, Modificación**), operación asíncrona con notificaciones directas (**Cancelación**), replicación **Líder Único semi-síncrona** y tolerancia a fallos transparente en **Gestor de Transacciones (GT)** y **RMC**.
 
@@ -14,7 +14,7 @@ Sistema distribuido basado en servicios sobre **ZeroMQ (PyZMQ)** y **SQLite (WAL
 
 ---
 
-## 2. Arquitectura Final y Puertos (3 Máquinas Virtuales Linux)
+## 2. Arquitectura Final y Puertos
 
 | Capa / VM | Proceso | Rol / Puertos |
 |---|---|---|
@@ -58,7 +58,7 @@ python3 ver_bd.py --comparar srb_lider.db srb_seg1.db srb_seg2.db --reservas
 
 ---
 
-## 4. Despliegue en 3 Máquinas Virtuales Linux (Usando Scripts)
+## 4. Despliegue en 3 Máquinas Virtuales Linux
 
 Dar permisos de ejecución una sola vez en las 3 VMs:
 ```bash
