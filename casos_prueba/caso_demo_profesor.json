@@ -1,0 +1,49 @@
+{
+  "cliente_id": "DEMO-PROF",
+  "mes": "2026-11",
+  "pasos": [
+    {
+      "op": "CONSULTA"
+    },
+    {
+      "op": "RESERVA",
+      "id_evento": "E1",
+      "fecha": "2026-11-01",
+      "num_asientos": 10,
+      "guardar_como": "res_doble"
+    },
+    {
+      "op": "RESERVA",
+      "id_evento": "E21",
+      "fecha": "2026-11-07",
+      "num_asientos": 5,
+      "guardar_como": "res_unica"
+    },
+    {
+      "op": "MODIFICACION",
+      "ref": "res_doble",
+      "tipo": "ASIENTOS",
+      "nuevo_num_asientos": 15
+    },
+    {
+      "op": "MODIFICACION",
+      "ref": "res_doble",
+      "tipo": "FECHA",
+      "nueva_fecha": "2026-11-15"
+    },
+    {
+      "op": "MODIFICACION",
+      "ref": "res_unica",
+      "tipo": "FECHA",
+      "nueva_fecha": "2026-11-14"
+    },
+    {
+      "op": "CANCELACION",
+      "ref": "res_unica"
+    },
+    {
+      "op": "CONSULTA",
+      "esperar_ms": 500
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.db
+*.db-wal
+*.db-shm
+resultados_experimentos/
+tmp_test/
+tmp_diag/
+gt_metricas*.csv
+persist_metricas*.csv
+resultados_*.csv
+notificaciones_*.csv
